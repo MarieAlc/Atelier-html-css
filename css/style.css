@@ -1,0 +1,23 @@
+.agence {
+    margin: 1.5em;
+    color: #029d5b;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+span {
+    font-style: italic;
+    font-family: "Poppins", serif;
+}
+.liste-nav,
+ ul {
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-style: 0.2em;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+ul{
+gap: 50px;
+}
