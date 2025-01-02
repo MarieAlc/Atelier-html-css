@@ -11,8 +11,6 @@ span {
 .liste-nav,
  ul {
     font-family: "Poppins", serif;
-    font-weight: bold;
-    font-style: 0.2em;
     display: flex;
     flex-direction: row;
     list-style: none;
