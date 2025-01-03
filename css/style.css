@@ -1,21 +1,53 @@
+* {
+    font-family: "Poppins", serif;
+    margin: 0%;
+}
+
 .agence {
     margin: 1.5em;
     color: #029d5b;
-    font-family: "Poppins", serif;
-    font-weight: bold;
+font-weight: bold;
 }
-span {
+.titre {
     font-style: italic;
-    font-family: "Poppins", serif;
+}
+.agence, .titre {
+    font-size: 24px;
 }
 .liste-nav,
  ul {
-    font-family: "Poppins", serif;
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
+    font-size: 16px;
+}
+.liste-nav{
+margin-right: 20px;
 }
 ul{
-gap: 50px;
+gap: 60px;
+font-weight: bold;
+text-align: center;
+padding-top: 45px;
+}
+.imagepresentation {
+    background: url(../images/feuille.jpg) no-repeat;
+
+background-size: cover;
+height: 799px;
+}
+.bienvenue {
+    color: white;
+    font-size: 2.7em;
+}
+.eco {
+    color: #d5f31f;
+    font-size: 50px;
+}
+h1 {
+    text-align: right ;
+padding-top: 600px;
+margin-right: 50px;
+
 }
