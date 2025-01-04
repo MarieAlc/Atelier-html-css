@@ -35,7 +35,7 @@ padding-top: 45px;
     background: url(../images/feuille.jpg) no-repeat;
 
 background-size: cover;
-height: 799px;
+height: 650px;
 }
 .bienvenue {
     color: white;
@@ -47,7 +47,37 @@ height: 799px;
 }
 h1 {
     text-align: right ;
-padding-top: 600px;
+padding-top: 400px;
 margin-right: 50px;
+}
 
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: #029d5b;
+    font-size: 2em;
+}
+.equipe {
+    text-align: center;
+    font-weight: bold;
+margin-left: 20%;
+margin-right: 20%;
+}
+.photo{
+display: inline-block;
+float:left;
+margin-left: 20%;
+margin-top: 50px;
+
+
+}
+.equipier1, .equipier2{
+    height: 300px;
+    width: 295px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.equipier3{
+    height: 300px;
+    border-radius: 50%;
 }
