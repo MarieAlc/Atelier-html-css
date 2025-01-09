@@ -213,7 +213,7 @@ input{
                         /* Galeire  */
 
 .galerie{
-    margin: 50px 200px 50px 200px;
+    margin: 50px 200px 0px 200px;
 
     
 }
@@ -227,3 +227,72 @@ input{
     margin-bottom: 20px;
     font-weight: bold;
 }
+.gauche{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.droit{
+    background-color: black;
+    border-radius: 50%;
+}
+.chevron{
+    max-width: 1200px;
+    display: flex;
+    margin-left: 200px;
+    gap: 1100px;
+   margin-bottom: 50px;
+
+}
+                /* Footer */
+.tableau_foot{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: #053b44;
+    color: white;
+    text-align: center;
+    flex-direction: row;
+
+}
+table{
+    width: 75%;
+}
+tr{
+    font-weight: 300;
+  }
+.coordonne{
+margin-left: 150px;
+}
+  .tel, .adresse{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10px auto 10px auto;   
+    gap: 10px; 
+ }
+
+  .tel img, .adresse img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .end{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #042c33;
+    color: white;
+    padding: 50px;
+    justify-content: space-between;
+  }
+  .social img{
+    height: 16px;
+    width: 16px;
+    border: 1px solid white;
+    padding: 10%;
+    border-radius: 20%;
+  }
+  .social{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
