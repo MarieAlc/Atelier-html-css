@@ -123,48 +123,69 @@ margin: 50px 200px;
 .formulaire{
     background-color: #053b44;
     color: white;
+    padding-top: 50px;
 
 }
 .formulaire h2 {
     color: #d5f31f;
+    
 }
 input{
     background-color: #053b44;
     border: none;
     border-bottom: 2px solid white;
-    margin-top: 20px;
+    margin-top: 30px;
+    color: white;
 }
 ::placeholder{
     color: white;
     font-weight: 200;
 }
 .ligne{
-    max-width: 1200px;
+
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
     padding-top: 20px;
+    padding-left: 30px;
+    margin-top: 50px;
     
 }
 .ligne, input{
-   padding-right: 200px;
+   padding-right: 400px;
    margin-bottom: 20px;
+   
 }
 #name, #phone{
-    margin-left: 400px;
+    margin-left: 200px;
+
 }
 #mail, #mess{
-    max-width: 1200px;
+
     display: flex;
     flex-wrap: wrap;
-    padding-right: 592px;
-    margin-left: 400px;
+    padding-right: 990px;
+    margin-left: 230px;
+    margin-top: 75px;
+
 }
 .mess{
- padding-bottom: 20px;
+ padding-bottom: 30px;
 }
 #mess{
-    padding-bottom: 300px;
+    padding-bottom: 250px;
+}
+.envoyer input{
+background-color: #d5f31f;
+color: #042c33;
+font-weight: bold;
+border: none;
+padding: 5px 10px;
+height: 50px;
+width: 150px;
+border-radius: 35%;
+margin-left: 1000px;
+
 }
 
 /* a propos  */
