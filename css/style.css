@@ -7,11 +7,25 @@ main{
     text-align: center;
 }
                                         /* Barre de navigation */
+nav{
+    position: fixed;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
 
 .agence {
     margin: 1.5em;
     color: #007c47;
 font-weight: bold;
+justify-content: flex-start;
+}
+a{
+    text-decoration: none;
+    color: #d5f31f;
 }
 .titre {
     font-style: italic;
@@ -24,18 +38,26 @@ font-weight: bold;
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-between;
     font-size: 16px;
 }
 .liste-nav{
 margin-right: 20px;
 }
 ul{
-gap: 60px;
+gap: 80px;
 font-weight: bold;
 text-align: center;
 padding-top: 45px;
+padding-left: 250px;
+
 }
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
 .imagepresentation {
     background: url(../images/feuille.jpg) no-repeat;
 
@@ -61,7 +83,11 @@ h2 {
     text-align: center;
     color: #029d5b;
     font-size: 2em;
-}
+ }
+
+
+
+
                                         /* Notre equpie avec photo  */
 .equipe {
     text-align: center;
@@ -71,9 +97,8 @@ margin-right: 20%;
 }
 
 .photo{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
+display: flex;
+flex-wrap: nowrap;
 margin-top: 80px;
 margin-left: 65px;
 }
@@ -130,6 +155,9 @@ margin: 50px 200px;
     color: #d5f31f;
     
 }
+.formulaire p {
+    margin-top: 20px;
+}
 input{
     background-color: #053b44;
     border: none;
@@ -145,27 +173,27 @@ input{
 
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 35px;
     padding-top: 20px;
     padding-left: 30px;
     margin-top: 50px;
     
 }
 .ligne, input{
-   padding-right: 400px;
+   padding-right: 450px;
    margin-bottom: 20px;
    
 }
 #name, #phone{
-    margin-left: 200px;
+    margin-left: 100px;
 
 }
 #mail, #mess{
 
     display: flex;
     flex-wrap: wrap;
-    padding-right: 990px;
-    margin-left: 230px;
+    padding-right: 1090px;
+    margin-left: 130px;
     margin-top: 75px;
 
 }
@@ -180,13 +208,11 @@ background-color: #d5f31f;
 color: #042c33;
 font-weight: bold;
 border: none;
-padding: 5px 10px;
-height: 50px;
-width: 150px;
-border-radius: 35%;
+padding: 15px 50px;
+border-radius:2em;
 margin-left: 1000px;
-
 }
+
 
 /* a propos  */
 
@@ -230,6 +256,7 @@ margin-left: 1000px;
 .logo_apropos h4{
     margin-bottom: 20px;
 }
+
 
                         /* Galeire  */
 

@@ -16,24 +16,33 @@
 <body>
                                         <!-- Barre de navigation  -->
     <header>
-        <nav>
-            <div class="liste-nav">
-                <p class="agence">Agenc<span class="titre">eco</span></p>
-                <ul>
-                    <li>Accueil</li>
-                    <li>Notre équipe</li>
-                    <li>Nos services</li>
-                    <li>Témoignages</li>
-                    <li>Contacter-nous</li>
-                    <li>Notre galerie</li>
-                </ul>
-            </div>
+        <nav class="navbar">
+                <div class="liste-nav" id="liste-nav">
+                    <p class="agence">Agenc<span class="titre">eco</span></p>
+            
+                    <div class="Menu">
+                        <ul>
+                            <li>Accueil</li>
+                            <li>Notre équipe</li>
+                            <li>Nos services</li>
+                            <li>Témoignages</li>
+                            <li>Contacter-nous</li>
+                            <li>Notre galerie</li>
+                        </ul>
+                    </div>
+                    <div class="burger" id="burger"> <!-- Menu burger pour les petits écrans -->
+                        <span>Accueil</span>
+                        <span>Notre équipe</span>
+                        <span>Témoignages</span>
+                    </div>
+                </div>
+
         </nav>
     </header>
                                             <!-- image de presentation  -->
     <main>
         <div class="imagepresentation">
-            <h1 class="bienvenue">Bienvenue dans votre <br><span class="eco">agence web écologique</span></h1>
+            <h1 class="bienvenue">Bienvenue dans votre <br><span class="eco"><a href="#bas">agence web écologique</a></span></h1>
         </div>
         <section>
 
@@ -83,6 +92,7 @@
                     <h3>2500</h3>
                     <p>Clients satisfaits</p>
                 </div>
+                <a id="bas"></a>
             </div>
         </section>
                                             <!-- Services Porposer  -->
