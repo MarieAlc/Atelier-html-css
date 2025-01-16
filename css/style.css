@@ -2,12 +2,15 @@
     font-family: "Poppins", serif;
     margin: 0%;
 }
-main{
+
+.main{
     margin: 0% auto;
     text-align: center;
 }
+
                                         /* Barre de navigation */
 nav{
+
     position: fixed;
     background-color: white;
     left: 0px;
@@ -15,40 +18,49 @@ nav{
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .agence {
     margin: 1.5em;
     color: #007c47;
-font-weight: bold;
-justify-content: flex-start;
+    font-weight: bold;
+    justify-content: flex-start;
 }
+
 a{
     text-decoration: none;
     color: #d5f31f;
 }
+
 .titre {
     font-style: italic;
 }
+
 .agence, .titre {
     font-size: 24px;
 }
-.liste-nav,
+
+.menu,
  ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     font-size: 16px;
+    padding-right: 20px;
 }
-.liste-nav{
-margin-right: 20px;
-}
+
+.menu{
+    margin-right: 20px;
+    display: flex;
+    padding: 0%;
+} 
+
 ul{
-gap: 80px;
-font-weight: bold;
-text-align: center;
-padding-top: 45px;
-padding-left: 250px;
+    gap: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: flex-end;
 
 }
 .burger {
@@ -57,12 +69,16 @@ padding-left: 250px;
     cursor: pointer;
 }
 
+.agence{
+    text-align: center;
+}
+    
 
 .imagepresentation {
     background: url(../images/feuille.jpg) no-repeat;
+    background-size: cover;
+    height: 650px;
 
-background-size: cover;
-height: 650px;
 }
 .bienvenue {
     color: white;
@@ -74,8 +90,8 @@ height: 650px;
 }
 h1 {
     text-align: right ;
-padding-top: 400px;
-margin-right: 50px;
+    padding-top: 400px;
+    margin-right: 50px;
 }
 
 h2 {
@@ -92,39 +108,42 @@ h2 {
 .equipe {
     text-align: center;
     font-weight: bold;
-margin-left: 20%;
-margin-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .photo{
-display: flex;
-flex-wrap: nowrap;
-margin-top: 80px;
-margin-left: 65px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 80px 30px;
 }
+
 .equipier img{
     height: 306px;
     width: 300px;
     border-radius: 50%;
 }
+
 .equipier{
     text-align: center;
 }
+
                                         /* Satisfaction client  */
 .satisfaction{
     background-color: #053b44;
-    margin-top: 32px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0px 30px 100px;
+    justify-content: space-between;
 }
+
 h3{
    color: #d5f31f;
    font-weight: bold;
    font-size: 2em;
 }
+
 .satisfaction p{
     color: white;
 }
@@ -132,32 +151,35 @@ h3{
                                         /* Service proposer  */
 .services{
 
-max-width: 1200px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-margin: 50px 200px;
-
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 200px;
 }
+
 .logo{
     background-color: rgb(236, 236, 236);
     padding: 50px;
     border-radius: 10%;
 }
                                                /* Formulaire */
-.formulaire{
+
+ .formulaire{
     background-color: #053b44;
     color: white;
     padding-top: 50px;
+}
 
-}
 .formulaire h2 {
-    color: #d5f31f;
-    
+    color: #d5f31f;    
 }
+
 .formulaire p {
     margin-top: 20px;
+    text-align: center;
 }
+
 input{
     background-color: #053b44;
     border: none;
@@ -165,10 +187,12 @@ input{
     margin-top: 30px;
     color: white;
 }
+
 ::placeholder{
     color: white;
     font-weight: 200;
 }
+
 .ligne{
 
     display: flex;
@@ -176,74 +200,72 @@ input{
     gap: 35px;
     padding-top: 20px;
     padding-left: 30px;
-    margin-top: 50px;
-    
+    margin-top: 50px;    
 }
+
 .ligne, input{
    padding-right: 450px;
-   margin-bottom: 20px;
-   
+   margin-bottom: 20px;   
 }
+
 #name, #phone{
     margin-left: 100px;
-
 }
-#mail, #mess{
 
+#mail, #mess{
     display: flex;
     flex-wrap: wrap;
     padding-right: 1090px;
     margin-left: 130px;
     margin-top: 75px;
-
 }
+
 .mess{
  padding-bottom: 30px;
 }
+
 #mess{
     padding-bottom: 250px;
 }
+
 .envoyer input{
-background-color: #d5f31f;
-color: #042c33;
-font-weight: bold;
-border: none;
-padding: 15px 50px;
-border-radius:2em;
-margin-left: 1000px;
+    background-color: #d5f31f;
+    color: #042c33;
+    font-weight: bold;
+    border: none;
+    padding: 15px 50px;
+    border-radius:2em;
+    margin-left: 1000px;
 }
 
 
 /* a propos  */
 
 .apropos{ 
-    margin: 50px 150px 20px 200px ;
- 
+    margin: 100px 150px 100px 200px ; 
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
 }
+
 .collab{
     width: 500px;
     height: 380px;
     border-radius: 5%;
 }
- .logo_apropos{
 
+ .logo_apropos{
     height: 360px;
     width: 500px;
     border-radius: 5%;
-}
-
-.logo_apropos{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     border: 1px solid black;
     padding: 20px 20px 0px 20px;
-    margin-bottom: auto;
-    
+    margin-bottom: auto;    
 }
+
 .logo_deux img{
     margin-right: 100px;
     margin-left: 20%;
@@ -253,6 +275,7 @@ margin-left: 1000px;
     padding: 10%;
     border-radius: 50%;
 }
+
 .logo_apropos h4{
     margin-bottom: 20px;
 }
@@ -261,36 +284,39 @@ margin-left: 1000px;
                         /* Galeire  */
 
 .galerie{
-    margin: 50px 200px 0px 200px;
-
-    
+    margin: 50px 200px 0px 200px;    
 }
+
 .galerie img{
     width: 1150px;
     height: 600px;
     border-radius: 5%;
 }
+
 .galerie p{
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
 }
+
 .gauche{
     border: 1px solid black;
     border-radius: 50%;
 }
+
 .droit{
     background-color: black;
     border-radius: 50%;
 }
+
 .chevron{
     max-width: 1200px;
     display: flex;
     margin-left: 200px;
     gap: 1100px;
    margin-bottom: 50px;
-
 }
+
                 /* Footer */
 .tableau_foot{
     padding-top: 50px;
@@ -300,17 +326,20 @@ margin-left: 1000px;
     color: white;
     text-align: center;
     flex-direction: row;
-
 }
+
 table{
     width: 75%;
 }
+
 tr{
     font-weight: 300;
   }
+
 .coordonne{
-margin-left: 150px;
+    margin-left: 150px;
 }
+
   .tel, .adresse{
     display: flex;
     flex-wrap: wrap;
@@ -343,4 +372,108 @@ margin-left: 150px;
     display: flex;
     gap: 10px;
     justify-content: flex-end;
+  }
+
+  @media screen and (max-width:1000px) {
+    .menu , ul {
+        display: none;
+    }
+
+    .bienvenue, .eco{
+        text-align: left;
+        padding-left: 20px;       
+    }
+
+    .eco{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .photo{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .equipier{
+        margin-bottom: 50px;
+    }
+
+    .ligne, input{
+        padding-right: 80px;
+    }
+
+    #mail, #mess{
+        padding-right: 440px;
+    }
+
+    .envoyer input{
+        margin-left: 700px;
+    }
+
+    .textform{
+        text-align: center;
+    }
+
+
+    .galerie {
+        margin: 20px;
+    }
+
+    .galerie img {
+        width: auto;
+    }
+
+    .chevron{
+        display: flex;
+        margin-left: 50px;
+        gap: 800px;
+       margin-bottom: 50px;        
+    }
+  }
+  @media screen and (max-width:768px){
+
+    .crea{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .ligne, input{
+        padding-right: 0px;
+
+    }
+
+    #mail, #mess{
+        padding-right: 280px;
+    }
+
+    .envoyer input{
+        margin-left: 500px;
+    }
+
+    .logo_apropos{
+        display: block;
+        height: 700px;
+        width: 700px;
+
+    }
+    .logo_deux{
+       margin-bottom: 50px;
+    }
+    .textlogo{
+        margin-bottom: 20px;
+    }
+    .galerie img {
+        height: 400px;
+        width: 600px;
+        margin-left: 80px;
+    }
+
+    .chevron{
+        margin-left: 100px;
+        gap: 550px;
+       margin-bottom: 50px;        
+    }
+
+
+
   }
