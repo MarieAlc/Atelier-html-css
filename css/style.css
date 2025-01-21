@@ -94,6 +94,18 @@ h2 {
     color: #029d5b;
     font-size: 2em;
  }
+ .burger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+ }
+ .burger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px;
+    transition: 0.3s;
+  }
 
 
 
@@ -159,6 +171,12 @@ h3{
 }
                                                /* Formulaire */
 
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
  .formulaire{
     background-color: #053b44;
     color: white;
@@ -178,8 +196,9 @@ input{
     background-color: #053b44;
     border: none;
     border-bottom: 2px solid white;
-    margin-top: 30px;
+    margin-top: 80px;
     color: white;
+    padding-right: 30%;
 }
 
 ::placeholder{
@@ -187,41 +206,28 @@ input{
     font-weight: 200;
 }
 
-.ligne{
+.ligne, .ligne-deux{
+display: flex;
+justify-content: space-around;
+}
 
+.mail{
     display: flex;
     flex-wrap: nowrap;
-    gap: 35px;
-    padding-top: 20px;
-    padding-left: 30px;
-    margin-top: 50px;    
-}
-
-.ligne, input{
-   padding-right: 450px;
-   margin-bottom: 20px;   
-}
-
-#name, #phone{
-    margin-left: 100px;
-}
-
-#mail, #mess{
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 1090px;
-    margin-left: 130px;
-    margin-top: 75px;
-}
-
-.mess{
- padding-bottom: 30px;
+    flex-direction: column;
+    margin: auto 4%;
 }
 
 #mess{
-    padding-bottom: 250px;
+    padding-bottom: 200px;
 }
 
+.envoyer{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    
+}
 .envoyer input{
     background-color: #d5f31f;
     color: #042c33;
@@ -229,7 +235,7 @@ input{
     border: none;
     padding: 15px 50px;
     border-radius:2em;
-    margin-left: 1000px;
+
 }
 
 
@@ -362,11 +368,18 @@ tr{
   }
 
   @media screen and (max-width:1000px) {
+
+    .agence{
+        margin-left: 10px;
+    }
+    .Menu{
+        display: none;
+    }
+
      .bienvenue, .eco{
         text-align: left;
         padding-left: 20px;       
     }
-
     .eco{
         display: flex;
         flex-wrap: nowrap;
@@ -380,33 +393,30 @@ tr{
     .equipier{
         margin-bottom: 50px;
     }
-
-    .ligne, input{
-        
-        padding-right: 80px;
-        margin:30px auto;
-
-    }
-
-    #mail, #mess{
-        margin: auto;
-        padding-right: 470px;
-        margin-bottom: 30px;
-    }
-
-    .envoyer input{
-        margin-left: 700px;
-    }
-
-    .textform{
+    h4 {
         text-align: center;
     }
 
 
+
+
+
+    .ligne, input, .ligne-deux, input{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mail, input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textform{
+        text-align: center;
+    }
     .galerie {
         margin: 20px;
     }
-
     .galerie img {
         width: auto;
     }
@@ -417,36 +427,41 @@ tr{
         gap: 800px;
        margin-bottom: 50px;        
     }
+    .burger {
+        display: flex;
+        margin-right: 50px;
+      }
+    
+      .menu.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .menu.active ul {
+        flex-direction: column;
+      }
+    
+      .menu.active ul li {
+        margin: 15px 0;
+      }
   }
-  @media screen and (max-width:768px){
-    .menu , ul {
-        font-size: 10px;
-    }
 
+
+  @media screen and (max-width:768px){
 
     .crea{
         margin-bottom: 20px;
         text-align: center;
-    }
-
-    .ligne, input{
-        padding-right: 0px;
-
-    }
-
-    #mail, #mess{
-        padding-right: 280px;
-    }
-
-    .envoyer input{
-        margin-left: 500px;
-    }
-  
+    }  
     .logo_apropos{
         display: block;
         height: 700px;
         width: 700px;
-
     }
     .collab{
         height: 300px;
@@ -469,7 +484,5 @@ tr{
         gap: 550px;
        margin-bottom: 50px;        
     }
-
-
 
   }

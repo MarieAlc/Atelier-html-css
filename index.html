@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/e43ba31067.js" crossorigin="anonymous"></script>
+        
 
 </head>
 
@@ -23,7 +24,7 @@
                     <p class="agence">Agenc<span class="titre">eco</span></p>
         
             
-                <div class="Menu">
+                <div class="Menu" id="Menu">
                         <ul>
                             <li>Accueil</li>
                             <li>Notre équipe</li>
@@ -32,13 +33,20 @@
                             <li>Contacter-nous</li>
                             <li>Notre galerie</li>
                         </ul>
-                </div>    
+                </div>  
+                  <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>  
 
         </nav>
+
     </header>
                                             <!-- image de presentation  -->
     <main>
         <div class="imagepresentation">
+        
             <h1 class="bienvenue">Bienvenue dans votre <br><span class="eco"><a href="#bas">agence web écologique</a></span></h1>
         </div>
         <section>
@@ -111,23 +119,24 @@
             <div class="formulaire">
 
                 <h2>Contactez-nous</h2>
-                <p class="textform">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, animi!</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, animi!</p>
+
                 <form action="#">
 
                     <div class="ligne"> 
-
-                     <input type="text" id="name" placeholder="Nom" >
+                        <input type="text" id="name" placeholder="Nom" >
 
                      <input type="text" id="catg" placeholder="Catégorie">
                     </div>
-                    <div class="ligne">
+                    
+                    <div class="ligne-deux">
                         <input type="tel" id="phone" placeholder="Téléphone">
                         <input type="text" id="ville" placeholder="Ville">
                     </div>
-                    
+                    <div class="mail">
                         <input type="email" id="mail" placeholder="Email">
-                        <br>
-                    <div class="mess">
+
                         <input type="text" id="mess" placeholder="Message">
                     </div>
                     <div class="envoyer">
@@ -250,6 +259,7 @@
 
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 
