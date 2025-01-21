@@ -69,10 +69,18 @@ ul{
     
 
 .imagepresentation {
-    background: url(../images/feuille.jpg) no-repeat;
-    background-size: cover;
+    background: url(../images/feuille.jpg) no-repeat center center/cover;
     height: 650px;
 
+}
+.background-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    margin-top: 70px;
+    z-index: 1;
 }
 .bienvenue {
     color: white;
@@ -242,10 +250,10 @@ justify-content: space-around;
 /* a propos  */
 
 .apropos{ 
-    margin: 100px 150px 100px 200px ; 
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
 .collab{
@@ -284,11 +292,13 @@ justify-content: space-around;
                         /* Galeire  */
 
 .galerie{
-    margin: 50px 200px 0px 200px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .galerie img{
-    width: 1150px;
+    width: 1000px;
     height: 600px;
     border-radius: 5%;
 }
@@ -312,10 +322,18 @@ justify-content: space-around;
 
 .chevron{
     display: flex;
-    margin-left: 200px;
-    gap: 1100px;
-   margin-bottom: 50px;
-   margin-top: 20px;
+    gap: 1000px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.fa-chevron-left, .fa-chevron-right{
+    border: 1px solid black;
+    padding: 8px 10px ;
+    border-radius: 50%;
+}
+.fa-chevron-left:hover , .fa-chevron-right:hover {
+    color: white;
+    background-color: black;
 }
 
 
@@ -372,7 +390,7 @@ tr{
     .agence{
         margin-left: 10px;
     }
-    .Menu{
+    .menu{
         display: none;
     }
 
@@ -437,7 +455,7 @@ tr{
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #333;
+        background-color: #ffffff;
         width: 100%;
         text-align: center;
       }
@@ -453,36 +471,111 @@ tr{
 
 
   @media screen and (max-width:768px){
+    .bienvenue, .eco{
+        font-size: 1.5em;
+
+    }
+    .satisfaction{
+        display: flex;
+        justify-content: space-around;
+        padding:20px 0;
+    }
 
     .crea{
         margin-bottom: 20px;
         text-align: center;
     }  
     .logo_apropos{
-        display: block;
-        height: 700px;
-        width: 700px;
+        height: 500px;
+        width: 370px;
+        margin-top: 30px;
     }
     .collab{
         height: 300px;
         width: 400px;
     }
+    .services{
+        gap: 50px
+    }
+
     .logo_deux{
+        display: flex;
        margin-bottom: 50px;
+       align-items: center;
+    }
+    .logo_deux img{
+        height: 30px;
+        width: 30px;
     }
     .textlogo{
         margin-bottom: 20px;
     }
     .galerie img {
         height: 400px;
-        width: 600px;
-        margin-left: 80px;
+        width: 600px;    
+    }
+    .galerie p {
+        max-width: 600px;
     }
 
     .chevron{
-        margin-left: 100px;
+    
         gap: 550px;
        margin-bottom: 50px;        
+    }
+
+  }
+  @media screen and (max-width:500px){
+    .apropos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 10px 0px;
+    }
+
+    .collab{
+        height: 300px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .logo_apropos{
+        display: flex;
+        height: 700px;
+        width: 370px;
+    }
+    .services{
+        margin: 0;
+    }
+    .galerie img{
+        height: 300px;
+        width: 400px;
+    }
+    .chevron{
+    
+        gap: 300px;
+       margin-left: 0; 
+    }
+    .tableau_foot{
+        flex-direction: column;
+        padding-left: 40px;
+    }
+    .coordonne{
+        display: flex;
+        margin: 0;
+        padding-right: 30px;
+    }
+
+    .adresse , .tel{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .end{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
     }
 
   }
