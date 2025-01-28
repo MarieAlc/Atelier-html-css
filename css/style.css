@@ -509,7 +509,7 @@ tr{
   }
 
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:780px){
     .bienvenue, .eco{
         font-size: 1.5em;
 
@@ -583,6 +583,16 @@ tr{
         display: flex;
         margin: 20px 0px 0px 0px;
         gap: 30px;
+    }
+
+  }
+  @media screen and (max-width:630px){
+    .galerie img {
+        width: 500px;
+        height: 300px;        
+    }
+    .chevron{    
+        gap: 450px;       
     }
 
   }
@@ -664,7 +674,11 @@ tr{
   }
     
 
-  @media screen and (max-width:340px){
+  @media screen and (max-width:375px){
+    .bienvenue{
+        margin-left: 0;
+    }
+
     .equipier img {
         height: 160px;
         width: 160px;
@@ -674,21 +688,28 @@ tr{
     }
 
     .satisfaction{
-        padding-left: 10px;
+        padding: 30px;
+        gap: 12px;
     }
     .logo{
-        padding: 25px;        
+        padding: 25px; 
+        margin-top: 20px;       
     }
     .formulaire p{
         padding: 0px 10px;
 
     }
-    .ligne , .ligne-deux , .mail{
+    .ligne , .ligne-deux , .mail {
         width: 300px;
+        margin-left: 10px;
     }
-    .mail{
-        margin: 0px;
+    .envoyer input {
+        padding: 10px 20px;        
     }
+    .envoyer{
+       width: 300px;
+    }
+
     .collab{
         width: 270px;
         height: 200px;
@@ -739,9 +760,22 @@ tr{
         padding: 5px 8px 8px 5px;
     }
     h1{
-        padding: 300px 0px 0px 0px;
+      
         text-align: center;
         margin: 0px 0px 0px 30px;
     }
 
+  }
+  @media screen and (max-width:320px){
+
+    .tableau_foot{
+        padding: 0;
+    }
+    .galerie img {
+        width: 240px;
+        height: 180px;
+    }
+    .chevron{
+        gap: 150px;
+    }
   }
