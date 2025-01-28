@@ -4,7 +4,7 @@ Ce projet est une intégration d'une maquette fournie. L'objectif était de repr
 Les technologie utilisé sont le HTML pour la structure, CSS pour le design et JAVASCRIPT pour la gestion de l'affichage du menu burger.
 
 Acces au site:
-https://www.alcantara.alwaysdata.net
+[https://www.alcantara.alwaysdata.net](https://alcantara.alwaysdata.net/)
 
 Instalation et utilisation :
 cloner le projet github avec git bash 
