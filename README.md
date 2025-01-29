@@ -6,13 +6,14 @@ Les technologie utilisé sont le HTML pour la structure, CSS pour le design et J
 Acces au site:
 [https://www.alcantara.alwaysdata.net](https://alcantara.alwaysdata.net/)
 
-Instalation et utilisation :
-cloner le projet github avec git bash 
+Vous pouvez cloner le projet github avec git bash 
 "git clone https://github.com/MarieAlc/atelier-html-css.git
-cd atelier-html-css
+cd atelier-html-css, 
+
+en ligne sur Github via https://github.com/MarieAlc/Atelier-html-css
 
 Ou ouvrir avec le ficher index.html dans un navigateur 
 
-Le code a été vérifié avec les validateurs W3C
+Le code a été vérifié avec les validateurs W3C (HTLM et CSS)
 
 Prjoet réalisé dans le cadre de ma formation en développement web.
