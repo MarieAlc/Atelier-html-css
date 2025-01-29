@@ -221,15 +221,15 @@ input{
 }
 
 .ligne, .ligne-deux{
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .mail{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin: auto 115px;
+    margin: auto 70px;
 }
 
 #mess{
@@ -482,8 +482,8 @@ tr{
         display: flex;
         margin-left: 50px;
         gap: 750px;
-       margin-bottom: 50px;
-       margin-left: 0px;        
+        margin-bottom: 50px;
+        margin-left: 0px;        
     }
     .burger {
         display: flex;
@@ -528,8 +528,7 @@ tr{
         height: 500px;
         width: 370px;
         margin-top: 30px;
-        padding: 10px 18px 0px
-        18px;
+        padding: 10px 18px 0px 18px;
     }
     .logo_deux{
         margin-bottom: 30px;
@@ -544,8 +543,8 @@ tr{
 
     .logo_deux{
         display: flex;
-       margin-bottom: 50px;
-       align-items: center;
+        margin-bottom: 50px;
+        align-items: center;
     }
     .logo_deux img{
         height: 30px;
@@ -566,7 +565,7 @@ tr{
     .chevron{
     
         gap: 550px;
-       margin-bottom: 50px;        
+        margin-bottom: 50px;        
     }
     .copyright{
         margin-left: 0px;
