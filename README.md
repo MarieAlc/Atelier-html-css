@@ -13,7 +13,6 @@ cd atelier-html-css,
 en ligne sur Github via https://github.com/MarieAlc/Atelier-html-css
 
 Ou ouvrir avec le ficher index.html dans un navigateur 
-
 Le code a été vérifié avec les validateurs W3C (HTLM et CSS)
 
 Prjoet réalisé dans le cadre de ma formation en développement web.
